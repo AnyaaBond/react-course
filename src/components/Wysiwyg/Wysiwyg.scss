@@ -19,4 +19,19 @@
   img{
     margin: 1rem;
   }
+
+
+  table {
+
+    background: #AFCDE7;
+    border-spacing: 0 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 1.1rem;
+  }
+  td {
+    padding: 15px;
+    text-align: center;
+    border: 3px solid;
+    border-color: white;
+  }
 }
