@@ -1,9 +1,12 @@
 .wrapper{
-  width: 50%
+  width: 100%
 }
 .list{
 
 }
 .btn{
   margin: 10px;
+}
+.inp{
+  padding: 10px;
 }
