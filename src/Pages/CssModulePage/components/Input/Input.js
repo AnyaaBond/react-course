@@ -11,7 +11,7 @@ function Input ({ className, isWide, label }) {
     css.inp,
     className,
     {
-      isWide,
+      [css.wide]: isWide,
       'inp-focused': isFocused,
       'inp-hover': !isFocused && isHovered
     }

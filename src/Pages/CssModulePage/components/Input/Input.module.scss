@@ -2,14 +2,16 @@
   margin-left: 10px;
   &:global(.inp-focused) {
     background: #F0FFFF;
-    width: 25rem;
   }
   &:global(.inp-hover) {
     background:  #008080;
-    transition: all .15s ease-in;
-    //background: #008080;
   }
 }
+
 label{
   font-size: 1.2em;
+}
+
+.wide{
+  width: 25rem;
 }
