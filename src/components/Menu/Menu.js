@@ -12,6 +12,7 @@ function Menu () {
       <div><NavLink to='/css-module' activeClassName={css.active}>Css module</NavLink></div>
       <div><NavLink to='/asdasdas' activeClassName={css.active}>404</NavLink></div>
       <div><NavLink to='/list' activeClassName={css.active}>Список</NavLink></div>
+      <div><NavLink to='/list-rdp' activeClassName={css.active}>Список RDP</NavLink></div>
     </>
   )
 }

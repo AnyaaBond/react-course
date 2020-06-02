@@ -6,6 +6,7 @@ import PageHome from './PageHome/PageHome'
 import Page404 from './Page404/Page404'
 import PageList from './PageList/PageList'
 import PageDetailRDP from './PageDetailRDP/PageDetailRDP'
+import PageListRDP from './PageListRDP/PageListRDP'
 
 function Routes () {
   return (
@@ -15,6 +16,7 @@ function Routes () {
       <Route path='/detail-rdp' component={PageDetailRDP} />
       <Route path='/css-module' component={CssModulePage} />
       <Route path='/list' component={PageList} />
+      <Route path='/list-rdp' component={PageListRDP} />
       <Route path='*' component={Page404} />
     </Switch>
   )
