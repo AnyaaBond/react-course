@@ -17,10 +17,13 @@ const options = {
   reducerKey: 'PageListAddMore'
 }
 
+const maxList = 3
+
 function PageListAddMore () {
   return (
     <>
       <h1>Список</h1>
+      <h2>Максимальное число страниц: {maxList}</h2>
       <ListGroup>
         <RemoteDataProviderCollector {...options}>
           {({ response: { data }, request: { params: { page } } }, { setChangeableRequest }) => {
@@ -39,9 +42,15 @@ function PageListAddMore () {
                     <div>{description}</div>
                   </ListGroup.Item>
                 ))}
-                <Button onClick={onClick}>
-                  Показать еще
-                </Button>
+
+                {
+                  (page < maxList) &&
+                   (
+                     <Button onClick={onClick}>
+                       Показать еще
+                     </Button>
+                   )
+                }
               </>
             )
           }}
@@ -50,5 +59,4 @@ function PageListAddMore () {
     </>
   )
 }
-
 export default PageListAddMore
